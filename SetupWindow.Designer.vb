@@ -253,6 +253,7 @@ Partial Class SetupWindow
         Me.txtRepeatCount.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
             Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
         Me.txtRepeatCount.Location = New System.Drawing.Point(98, 69)
+        Me.txtRepeatCount.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.txtRepeatCount.Name = "txtRepeatCount"
         Me.txtRepeatCount.Size = New System.Drawing.Size(292, 20)
         Me.txtRepeatCount.TabIndex = 11

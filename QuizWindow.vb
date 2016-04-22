@@ -95,7 +95,7 @@
     End Sub
 
     Public Sub Reset()
-        lblInfo.Text = Words.Count & " words" & vbNewLine & vbNewLine & Repeats & " times per word" & vbNewLine & vbNewLine & "Press start to begin"
+        lblInfo.Text = Words.Count & " words" & vbNewLine & vbNewLine & Repeats & " time" & If(Repeats <> 1, "s", "") & " per word" & vbNewLine & vbNewLine & "Press start to begin"
         QuestionTimer.Enabled = False
         lblInfo.Visible = True
         cmdStart.Visible = True
