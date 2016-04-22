@@ -128,6 +128,13 @@
             For Each s As String In My.Settings.Words
                 WordListBox.Items.Add(s)
             Next
+        Else
+            Dim r As New Random
+            For i As Integer = 0 To CInt(txtGeneratorCount.Value) - 1
+                Dim j As Integer = r.Next(Dictionary.Count)
+                Dim s As String = Dictionary(j)
+                If AddWord(s, True) Then i -= 1
+            Next
         End If
     End Sub
 
