@@ -91,7 +91,9 @@
 
     Private Sub cmdRemoveWord_Click(sender As Object, e As EventArgs) Handles cmdRemoveWord.Click
         If WordListBox.SelectedIndex >= 0 Then
+            Dim OldIndex As Integer = WordListBox.SelectedIndex
             WordListBox.Items.RemoveAt(WordListBox.SelectedIndex)
+            WordListBox.SelectedIndex = OldIndex - 1
         End If
 
     End Sub
